@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comic Con</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dd8ca4d5e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-facebook-official"></i>
+        </div>
+        <form id="login" class="input-group">
+            <div class="inputbox">
+                <i class="fa fa-envelope-o"></i>
+                <input type="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <i class="fa fa-lock"></i>
+                <input type="password" required>
+                <label for="">Password</label>
+            </div>
+            <div class="Remember">
+                <label for=""><input type="checkbox">Remember Me </label>
+            </div>
+            <button class="End">Login</button>
+            <div class="forget">
+                <a href="#"> I Forgot My Password </a>
+            </div>
+        </form>
+        <form id="register" class="input-group">
+            <div class="inputbox">
+                <i class="fa fa-user"></i>
+                <input type="text" required>
+                <label for="">First Name</label>
+            </div>
+            <div class="inputbox">
+                <i class="fa fa-envelope-o"></i>
+                <input type="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <i class="fa fa-lock"></i>
+                <input type="password" required>
+                <label for=""> Create Password</label>
+            </div>
+            <button class="End">Register</button>
+        </form>
+      </div>
+
+      <!-- JavaScript -->
+
+      <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+          x.style.left = "-400px";
+          y.style.left = "50px";
+          z.style.left = "110px";
+        }
+        function login() {
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0px";
+        }
+      </script>
+    </div>
+  </body>
+</html>
