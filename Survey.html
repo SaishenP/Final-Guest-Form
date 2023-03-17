@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form </title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 class="heading__T">Survey Form</h1>
+        <h2 class="heading__S">
+            <i>Thank you for taking the time to help us improve the platform</i>
+        </h2>
+    </div>
+    <form >
+        <div class="container">
+            <label>Name</label><br><br>
+            <input type="text" name="name" placeholder="Enter Your Name" class="box"><br><br>
+            <label>Email</label><br><br>
+            <input type="email" name="Email" placeholder="Enter Your Email" class="box"><br><br>
+            <label>Age (optional)</label><br><br>
+            <input type="age" name="age" placeholder="Enter your Age" class="box"><br><br>
+            <label>Which option best describes how you felt about the event ?</label><br><br>
+
+            <div class="Soption">
+                <select>
+                    <option name="Select Your option">Select Your option</option>
+                    <option value="Okay">Okay</option>
+                    <option value="Good">Good</option>
+                    <option value="Great">Great</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Outstanding">Outstanding</option>
+                </select>
+            </div>
+            <label class="head1">Would you recommend to a friend?</label><br><br>
+            <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspDefinitely<br /><br />
+            <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspMaybe<br /><br />
+            <input type="radio" name="radio" class="larger">&nbsp&nbsp&nbspNot Sure<br /><br />
+
+            <label>What was your favourite feature</label><br>
+            <div class="Soption2">
+                <select>
+                    <option name="Select an option">Select an option</option>
+                    <option value="Guests">Guests</option>
+                    <option value="Booths">Booths</option>
+                    <option value="Cosplay">Cosplay</option>
+                    <option value="Comic books">Comic Books</option>
+                </select>
+            </div>
+            <br><br>
+            <label for="Soption3">What would you like to see improved?(check all that Apply)</label><br>
+            <div class="container2">
+                <input type="checkbox" name="checkbox" class="larger">
+                <label>&nbsp&nbsp&nbspGuests</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger">
+                <label>&nbsp&nbsp&nbspBooths</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger">
+                <label>&nbsp&nbsp&nbspSpecial Events</label><br><br>
+                <input type="checkbox" name="checkbox" class="larger">
+                <label>&nbsp&nbsp&nbspComic Books</label><br><br>
+
+                <label class="container2">Any comments or suggestions?</label><br><br>
+                <textarea placeholder="Enter your Comment Here..."></textarea>
+                <button><h3>Submit</h3></button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
