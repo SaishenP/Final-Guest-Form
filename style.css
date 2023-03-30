@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+.container{
+    position: relative;
+    background-color:rgb(255, 255, 255);
+    max-width: 900px;
+    max-height: 700px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 0 15px;
+}
+.container header{
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(51, 51, 51) ;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: rgb(255, 255, 255);
+}
+.container form .form{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+.detail_personal{
+    margin-top: 30px;
+}
+.details_ID{
+    margin-top: 10px;
+}
+.title{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgb(51, 51, 51);
+
+}
+.fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    border-radius: 5px;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field input[type="date"]{
+    color: rgb(112, 112, 112);
+}
+.input-field input[type="date"]:valid{
+    color: rgb(51, 51, 51);
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 5px;
+    margin: 25px 0;
+    width: 100%;
+}
+.button input[type="submit"]{
+    background-color:rgba(170, 170, 170, 0.1);
+    border:none;
+}
+button:hover{
+    background-color: blueviolet;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.button i{
+    margin: 0px 10px;
+}
